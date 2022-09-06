@@ -1,4 +1,4 @@
-![Nuget](https://img.shields.io/nuget/v/JsonViewer)
+[![Nuget](https://img.shields.io/nuget/v/JsonViewer)](https://www.nuget.org/packages/JsonViewer/0.5.0)
 ---
 ## Json Viewer in UWP
 
