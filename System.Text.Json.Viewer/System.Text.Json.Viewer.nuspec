@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>JsonViewer</id>
+    <version>0.5</version>
+    <title>JsonViewer</title>
+    <authors>nero_cui</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/nerocui/JsonViewer</projectUrl>
+    <description>This package use System.Text.Json for parsing and render a Json viewer in WinUI</description>
+    <releaseNotes>This release contains the basic function of parsing and displaying a json string</releaseNotes>
+    <copyright></copyright>
+    <tags>json WinUI UWP</tags>
+  </metadata>
+</package>

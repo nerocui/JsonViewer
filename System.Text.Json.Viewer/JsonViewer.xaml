@@ -16,7 +16,8 @@
             Margin="0 8 8 0"
             Click="OnCopy"
             Canvas.ZIndex="100"
-            Visibility="{x:Bind Config.ShowCopy, Mode=OneWay}"
+            Visibility="Collapsed"
+            x:Name="CopyButton"
             Content="Copy"/>
         <ScrollViewer>
             <StackPanel

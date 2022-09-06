@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="JsonViewer.Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JsonViewer.Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:viewer="using:System.Text.Json.Viewer"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid
+        Padding="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button
+            Grid.Row="0"
+            HorizontalAlignment="Right"
+            Grid.ColumnSpan="2"
+            Margin="6"
+            Command="{x:Bind ViewModel.SetConfigCommand}"
+            Content="Validate"/>
+        <TextBox
+            x:Name="JsonInput"
+            Grid.Row="1"
+            Grid.Column="0"
+            AcceptsReturn="True"
+            Margin="0 0 4 0"
+            Text="{x:Bind ViewModel.Text, Mode=TwoWay}"
+            VerticalAlignment="Stretch"/>
+        <Grid
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="Container">
+            <viewer:JsonViewer
+                Config="{x:Bind ViewModel.Config, Mode=OneWay}"/>
+        </Grid>
+    </Grid>
+</Page>

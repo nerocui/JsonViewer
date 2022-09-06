@@ -26,7 +26,7 @@ public sealed partial class JsonViewer : UserControl
         }
     }
 
-    public JsonViewerConfig Config
+    public JsonViewerConfig? Config
     {
         get => (JsonViewerConfig)GetValue(ConfigProperty);
         set => SetValue(ConfigProperty, value);
@@ -48,6 +48,7 @@ public sealed partial class JsonViewer : UserControl
     {
         OuterBox.Background = new SolidColorBrush(config.ThemeConfig.Background);
         Container.Children.Clear();
+        CopyButton.Visibility = Config.ShowCopy;
         try
         {
             var jsonDoc = JsonDocument.Parse(config.Json);
