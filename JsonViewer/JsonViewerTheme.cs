@@ -1,6 +1,6 @@
 ﻿using Windows.UI;
 
-namespace System.Text.Json.Viewer;
+namespace JsonViewer;
 
 public class JsonViewerTheme
 {

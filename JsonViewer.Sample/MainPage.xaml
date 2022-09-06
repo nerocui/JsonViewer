@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:json="using:JsonViewer"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    xmlns:viewer="using:System.Text.Json.Viewer"
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid
@@ -39,7 +39,7 @@
             Grid.Row="1"
             Grid.Column="1"
             x:Name="Container">
-            <viewer:JsonViewer
+            <json:JsonViewer
                 Config="{x:Bind ViewModel.Config, Mode=OneWay}"/>
         </Grid>
     </Grid>

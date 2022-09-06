@@ -1,6 +1,6 @@
 ﻿using Windows.UI.Xaml;
 
-namespace System.Text.Json.Viewer;
+namespace JsonViewer;
 
 public class JsonViewerConfig
 {

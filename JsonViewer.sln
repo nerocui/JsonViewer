@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Text.Json.Viewer", "System.Text.Json.Viewer\System.Text.Json.Viewer.csproj", "{2A2E6121-3A65-4BD4-9F6D-E4E9C30A6B3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonViewer", "JsonViewer\JsonViewer.csproj", "{2A2E6121-3A65-4BD4-9F6D-E4E9C30A6B3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonViewer.Sample", "JsonViewer.Sample\JsonViewer.Sample.csproj", "{4D6A81A2-92F1-416F-9EF7-2E187D454B63}"
 EndProject

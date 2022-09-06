@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>JsonViewer</id>
-    <version>0.51</version>
+    <version>1.0.4</version>
     <title>JsonViewer</title>
     <authors>Nero_Cui</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

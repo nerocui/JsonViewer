@@ -1,11 +1,13 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Text.Json;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-namespace System.Text.Json.Viewer;
+namespace JsonViewer;
 
 public sealed partial class JsonViewer : UserControl
 {
@@ -13,7 +15,7 @@ public sealed partial class JsonViewer : UserControl
     private const int _buttonSize = 16;
 
     public static DependencyProperty ConfigProperty = DependencyProperty.Register(
-        nameof(Json),
+        nameof(Config),
         typeof(JsonViewerConfig),
         typeof(JsonViewer),
         new PropertyMetadata(default(string), OnJsonChange));

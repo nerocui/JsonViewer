@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Text.Json.Viewer;
+using JsonViewer;
 
 namespace JsonViewer.Sample
 {
